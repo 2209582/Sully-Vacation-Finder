@@ -49,7 +49,7 @@ body {
   color: black;
   position: absolute;
   left: 50%;
-  top: 500%;
+  top: 550%;
   transform: translate(-50%, 0%);
   text-align: center;
 }
