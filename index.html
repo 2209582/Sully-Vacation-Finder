@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App Main</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script type="text/javascript" src="./src/index.js"></script>
+    <script type="text/javascript" src="./src/locsearch.js"></script>
+  </head>
+  <body>
+    <h1 id="mainHeader">Sully's Vacation Finder</h1>
+    <h2>Find a place to go for you next vacation.</h2>
+    <a href="./aboutpage.html"
+      ><h6 style="color: blue;">About this app...</h6></a
+    >
+    <a href="./randpage.html"><button id="randButton">Random</button></a>
+    <label for="randButton" id="randButtonLabel">Find a Random Location:</label>
+    <select id="categoryDropdown"
+      ><option value="Cheap">Cheap</option>
+      <option value="Historical">Historical</option>
+      <option value="Lakes/Glaciers">Lakes/Glaciers</option>
+      <option value="Fun for the Family">Fun for the Family</option>
+    </select>
+    <label for="categoryDropdown" id="categoryDropdownLabel"
+      >Search for a Location:</label
+    >
+    <button id="locSearchButton">Search</button>
+    <h1 id="locText"></h1>
+    <div id="locs" style="text-align: center;">
+      <h2 id="loc0"></h2>
+      <img id="img0" class="img" />
+      <h2 id="loc1"></h2>
+      <img id="img1" class="img" />
+      <h2 id="loc2"></h2>
+      <img id="img2" class="img" />
+    </div>
+  </body>
+</html>
