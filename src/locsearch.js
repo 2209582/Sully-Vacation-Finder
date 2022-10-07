@@ -14,6 +14,7 @@ const locSelect = document.getElementById("categoryDropdown");
 let selectVal = "placeholder";
 let locText = document.getElementById("locText");
 const locSearchButton = document.getElementById("locSearchButton");
+const randLocSearchButton = documet.getElementById("randLocSearchButton");
 
 setInterval(() => {
   if (locSelect && locText) {
@@ -23,6 +24,9 @@ setInterval(() => {
 
 locSearchButton.addEventListener("click", () => {
   locText.textContent = `Places in category: ${selectVal}`;
+  
+randLocSearchButton.addEventListener("click", () => {
+  locText.textContent = `Random Place in category: ${selectVal}`;
 
   let currCategory = [];
   let currImgs = [];
