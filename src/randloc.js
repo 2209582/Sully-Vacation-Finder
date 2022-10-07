@@ -5,9 +5,11 @@ let randLocImg = document.getElementById("randLocImg");
 
 function genRandLoc() {
   const randNum = Math.floor(Math.random() * 9);
-  if (randLocText && randLocImg) {
+  if (randLocText) {
     randLocText.textContent = locations.locs[randNum];
-    randLocImg.src = locations.imgSrcs[randNum];
+    if (randImg) {
+      randLocImg.src = locations.imgSrcs[randNum];
+    }
   }
 }
 genRandLoc();
